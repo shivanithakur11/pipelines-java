@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: aks
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 3389 
+    selector:
+        app: aks
